@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from '../components/head'
-import { WisdomMain, WisdomHome } from 'gsa-ui'
+import { WisdomMain, WisdomNews } from 'gsa-ui'
 import styled from 'styled-components'
 
 export default () => (
@@ -9,7 +9,7 @@ export default () => (
       <title>Wisdom</title>
     </Head>
     <WisdomMain>
-      <WisdomHome hasBar={true} bar={true}/>
+      <WisdomNews/>
     </WisdomMain>
   </div>
 )
