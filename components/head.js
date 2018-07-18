@@ -11,10 +11,8 @@ const Head = (props) => (
     <title>{props.title || 'GSA Wisdom Academy'}</title>
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-    <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-    <link rel="icon" href="/static/favicon.ico" />
+    <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
+    <link rel="icon" href="/static/gsafavicon.ico" />
     <meta property="og:url" content='https://wisdom-academy.com/' />
     <meta property="og:title" content="GSA Wisdom Academy" />
     <meta property="og:description" content={props.description || defaultDescription} />
