@@ -3139,7 +3139,7 @@ growly@^1.3.0:
 
 "gsa-ui@git+ssh://git@github.com/global-step/gsa-ui.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#3f6f141b02c662c49d3670d96747fc6d24eecf33"
+  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#868430a60aec5f92f49b0f29d687976d32ffd4ff"
   dependencies:
     "@storybook/addon-info" "^3.2.13"
     "@storybook/addon-storyshots" "^3.3.15"
