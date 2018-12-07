@@ -22,6 +22,12 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
+"@babel/runtime@^7.1.2":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/types@7.0.0-beta.40":
   version "7.0.0-beta.40"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.40.tgz#25c3d7aae14126abe05fcb098c65a66b6d6b8c14"
@@ -1970,6 +1976,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+create-react-context@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.3.tgz#9ec140a6914a22ef04b8b09b7771de89567cb6f3"
+  dependencies:
+    fbjs "^0.8.0"
+    gud "^1.0.0"
+
 cross-spawn@5.1.0, cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -2735,6 +2748,18 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
+fbjs@^0.8.0:
+  version "0.8.17"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.18"
+
 fbjs@^0.8.1, fbjs@^0.8.12, fbjs@^0.8.16, fbjs@^0.8.4, fbjs@^0.8.5, fbjs@^0.8.9:
   version "0.8.16"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
@@ -3139,7 +3164,7 @@ growly@^1.3.0:
 
 "gsa-ui@git+ssh://git@github.com/global-step/gsa-ui.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#1f806c8044be62e701d0218f57cffa910fe13c5b"
+  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#24ed16cec88f6811c5f8e9c612c38623e05b850c"
   dependencies:
     "@storybook/addon-info" "^3.2.13"
     "@storybook/addon-storyshots" "^3.3.15"
@@ -3158,13 +3183,17 @@ growly@^1.3.0:
     moment "^2.20.1"
     react "^16.2.0"
     react-dom "^16.2.0"
-    react-i18next "^7.3.6"
+    react-i18next "8.3.5"
     react-router-dom "^4.2.2"
     react-test-renderer "^16.2.0"
     reactstrap "^5.0.0-beta"
     recompose "^0.26.0"
     storybook "^1.0.0"
     styled-components "^3.1.6"
+
+gud@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
 
 handlebars@^4.0.3:
   version "4.0.11"
@@ -3332,6 +3361,12 @@ hoek@4.x.x:
 hoist-non-react-statics@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
+
+hoist-non-react-statics@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.0.1.tgz#fba3e7df0210eb9447757ca1a7cb607162f0a364"
+  dependencies:
+    react-is "^16.3.2"
 
 hoist-non-react-statics@^1.2.0:
   version "1.2.0"
@@ -5644,13 +5679,26 @@ react-html-attributes@^1.3.0:
   dependencies:
     html-element-attributes "^1.0.0"
 
-react-i18next@^7.3.6, react-i18next@^7.4.0:
+react-i18next@8.3.5:
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-8.3.5.tgz#7a24f2715646bf8027cc39aca04c94e8c0b130c0"
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    create-react-context "0.2.3"
+    hoist-non-react-statics "3.0.1"
+    html-parse-stringify2 "2.0.1"
+
+react-i18next@^7.4.0:
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-7.4.0.tgz#07a336e49fc8f2599d08136d73134e3dc4830b49"
   dependencies:
     hoist-non-react-statics "2.3.1"
     html-parse-stringify2 "2.0.1"
     prop-types "^15.6.0"
+
+react-is@^16.3.2:
+  version "16.6.3"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.6.3.tgz#d2d7462fcfcbe6ec0da56ad69047e47e56e7eac0"
 
 react-popper@^0.7.2:
   version "0.7.5"
@@ -5910,6 +5958,10 @@ regenerator-runtime@^0.10.0:
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
+
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
 regenerator-transform@^0.10.0:
   version "0.10.1"
@@ -6982,6 +7034,10 @@ type-is@~1.6.15:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+ua-parser-js@^0.7.18:
+  version "0.7.19"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"
