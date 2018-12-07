@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "yarn add git+ssh://git@github.com/global-step/gsa-ui.git && next",
     "build": "next build",
+    "postbuild": "gzip .next/app.js",
     "start": "yarn build && next start -p $PORT"
   },
   "dependencies": {
