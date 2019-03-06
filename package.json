@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "yarn add git+ssh://git@github.com/global-step/gsa-ui.git && next",
     "build": "next build",
-    "start": "yarn build && next start -p $PORT"
+    "start": "yarn build && next start -p $PORT",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.0",
@@ -20,5 +21,6 @@
     "react-i18next": "^7.4.0",
     "reactstrap": "^4.8.0",
     "styled-components": "^3.1.6"
-  }
+  },
+  "heroku-run-build-script": true
 }
