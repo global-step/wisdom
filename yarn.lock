@@ -2631,7 +2631,7 @@ growly@^1.3.0:
 
 "gsa-ui@git+ssh://git@github.com/global-step/gsa-ui.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#72a2518df2477ac7d1b803d2cdbaa9b38ccdfbfe"
+  resolved "git+ssh://git@github.com/global-step/gsa-ui.git#740fcf8156a83f0bace510670259f5d56a9eb51e"
   dependencies:
     babel-plugin-flow-react-proptypes "^7.0.1"
     bootstrap "^4.0.0"
